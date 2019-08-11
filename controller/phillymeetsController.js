@@ -14,11 +14,11 @@ router.get("/", function(req, res) {
   });
 });
 // This posts to the "Philly Meets" page what is created below. 
-router.post("/api/phillyMeets", function(req, res) {
-  phillyMeets.create(["#", "#"], [req.body.#, req.body.#], function(result) {
-    res.json({ id: result.insertId });
-  });
-});
+// router.post("/api/phillyMeets", function(req, res) {
+//   phillyMeets.create(["#", "#"], [req.body.#, req.body.#], function(result) {
+//     res.json({ id: result.insertId });
+//   });
+// });
 
 
 router.put("/api/phillyMeets/:id", function(req, res) {

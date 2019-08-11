@@ -1,2 +1,29 @@
 # Project_2
-Testing!
+
+
+##Overview
+
+## Front-End
+
+
+##Back-End
+
+### MySQL Database
+
+
+### Connections.js
+
+
+### config/orm.js
+
+
+### model/phillymeets.js
+
+
+### controller/phillymeetsController.js
+
+
+### server.js
+
+
+####handlebars
