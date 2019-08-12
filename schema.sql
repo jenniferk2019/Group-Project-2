@@ -1,9 +1,8 @@
-### Schema
-
 CREATE DATABASE phillymeetup_db;
 USE phillymeetup_db;
 
 CREATE TABLE phillymeets
+-- Is this table just for events? 
 (
 	id int NOT NULL AUTO_INCREMENT,
 	event_name varchar(30) NOT NULL,
