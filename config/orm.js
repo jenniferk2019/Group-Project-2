@@ -41,13 +41,22 @@ function objToSql(ob) {
 
 // Object for all our SQL statement functions.
 var orm = {
-  all: function(tableInput, callBack) {
-    var queryString = "SELECT * FROM " + tableInput + ";";
+  all: function(tableName, callBack) {
+    var queryString = "SELECT * FROM " + tableName + ";";
     connection.query(queryString, function(err, result) {
+      // You have a connection, with connects you to the database, which has two methods. 
+      // THe connection.query is a method that is pulling the data that was input into the database. Connection.query takes in TWO parameters - what you are looking for, and what you want to do with it. You look for this (queryString) and what do you do with it? The callBack function. 
+
+      // The first PARAMETER in a CallBack in NODE is ALWAYS an error. 
+
+
       if (err) {
         throw err;
+       
       }
+      console.log(result)
       callBack(result);
+      // In the result, we have the data from the mySQL 
     });
   },
   create: function(table, cols, vals, callBack) {

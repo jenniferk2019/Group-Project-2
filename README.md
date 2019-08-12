@@ -15,7 +15,7 @@
 - Declared variable and set equal to `require("mySQL")`. Added pertinent host, username, password, root, and other variables. Exported SQL variable under `connection`. 
 
 ### config/orm.js
-
+- 
 
 ### model/phillymeets.js
 
