@@ -9,20 +9,20 @@ $("#add-btn").on("click", function (event) {
     name: $("#name").val().trim(),
     location: $("#location").val().trim(),
     date: $("#date").val().trim(),
-    author: $("#author").val().trim()
+    user: $("#user").val().trim()
   };
 
   // Send an AJAX POST-request with jQuery
   $.post("/api/new", newHang)
     // On success, run the following code
     .then(function (data) {
-     // Log the data we found
-        console.log(data);
+    // Log the data we found
+      console.log(data);
     });
 
   // Empty each input box by replacing the value with an empty string
   $("#name").val("");
   $("#location").val("");
   $("#date").val("");
-  $("#author").val("");
+  $("#user").val("");
 });
