@@ -1,73 +1,63 @@
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="text-center">
-      <span class="fa fa-fire"></span> Hot Restaurant</h1>
-    <hr>
-    <h2 class="text-center">Make your reservation</h2>
-    <br>
-    <div class="text-center">
-      <a href="../index.handlebars">
-        {{!-- <button class="btn btn-lg btn-primary">
-          <span class="fa fa-list-alt"></span> View Tables</button> --}}
-      </a>
-      <a href="/">
-        <button class="btn btn-lg btn-default">
-          <span class="fa fa-home">Home</span>
-        </button>
-      </a>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-none">
+  <a class="navbar-brand" href="#">3RDWheel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <span class="navbar-text" id="sign">sign up</span>
+    <span class="navbar-text">log in</span>
   </div>
-  <div class="row">
-    <div class="col-lg-12">
-      <!-- Reservation Page -->
-      <div class="card">
-        <div class="card-header">
-          Create Activity
-        </div>
+</nav>
+<div class="row">
+  <div class="col-lg-12">
 
-        <div class="card-body">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown button
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Food and Wine</a>
-              <a class="dropdown-item" href="#">Sports</a>
-              <a class="dropdown-item" href="#">Entertainment</a>
-            </div>
+    <div class="card">
+      <div class="card-header">
+        fill the form below to create an account and to post your activity
+      </div>
+
+      <div class="card-body">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            category
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">food & wine</a>
+            <a class="dropdown-item" href="#">sports</a>
+            <a class="dropdown-item" href="#">entertainment</a>
           </div>
-
-
-          <form role="form">
-            <div class="form-group">
-              <label for="reserve-name">Name</label>
-              <input type="text" class="form-control" id="reserve-name">
-            </div>
-            <div class="form-group">
-              <label for="reserve-phone">Location</label>
-              <input type="text" class="form-control" id="reserve-phone">
-            </div>
-            <div class="form-group">
-              <label for="reserve-email">Date</label>
-              <input type="text" class="form-control" id="reserve-email">
-            </div>
-            <div class="form-group">
-              <label for="reserve-unique-id">User</label>
-              <input type="text" class="form-control" id="reserve-unique-id">
-            </div>
-            <button type="submit" class="btn btn-primary submit">Submit</button>
-          </form>
         </div>
+        <br />
+        <form role="form">
+          <div class="form-group">
+            <label for="reserve-name">name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="reserve-phone">location</label>
+            <input type="text" class="form-control" id="location">
+          </div>
+          <div class="form-group">
+            <label for="reserve-email">date</label>
+            <input type="text" class="form-control" id="date">
+          </div>
+          <div class="form-group">
+            <label for="reserve-unique-id">user id</label>
+            <input type="text" class="form-control" id="user">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">activity details</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <br />
+          <button type="submit" class="btn btn-secondary submit" id="submit">submit</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
-<footer class="footer">
-  {{!-- <div class="container">
-       <p>
-         <a href="/api/tables">API Table Link</a> |
-         <a href="/api/waitlist">API Wait List</a>
-     </div> --}}
-</footer>
+</div>
+<footer class="footer">&copy;3rdWheel 2019</footer>
 </div>
