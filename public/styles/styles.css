@@ -1,3 +1,93 @@
-.list-group-item {
-  line-height: 2.5;
+/* footer */
+.footer {
+  font-family: 'Major Mono Display', monospace;
+}
+
+/* index.handlebars */
+
+.navbar-brand {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.navbar-text {
+  margin-left: auto;
+  font-family: 'Major Mono Display', monospace;
+}
+
+#navbarText {
+  cursor: pointer;
+}
+
+#sign {
+  margin-left: 900px;
+}
+
+.jumbotron {
+  min-height: 646px;
+  padding: 0%;
+  margin: 0%;
+}
+
+#display {
+  background-image: url(../styles/img/jumbotron.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.display-4 {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+}
+
+.container {
+  margin: 0%;
+}
+
+.lead {
+  font-family: 'Major Mono Display', monospace;
+  margin: 0%;
+  text-align: left;
+}
+
+.user-btn {
+  text-align: center;
+  font-family: 'Major Mono Display', monospace;
+  color: white;
+}
+
+.btn {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+}
+
+/* post.handlebars */
+
+.card-header {
+  font-family: 'Major Mono Display', monospace;
+}
+
+#dropdownMenuButton {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.dropdown-item {
+  font-family: 'Major Mono Display', monospace;
+}
+
+.form-group {
+  font-family: 'Major Mono Display', monospace;
+}
+
+#submit {
+  font-family: 'Major Mono Display', monospace;
+}
+
+/* join.handlebars */
+
+.card {
+  font-family: 'Major Mono Display', monospace;
 }
