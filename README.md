@@ -1,38 +1,29 @@
-# Project Starter
+# Project_2
 
-In this activity we will add the provided boilerplate to group project repos.
 
-## Instructions
+##Overview
 
-* Only one member of each group should complete this activity while the others watch.
+## Front-End
+- Jen and Josh add here
 
-* Copy the entire [Unsolved](Unsolved) folder to another location on your computers &mdash; wherever you would like your local copy of the group project to be.
+##Back-End
 
-* Rename the copied "Unsolved" folder to the name of your project.
+### MySQL Database
+- Initialized database - `phillyMeets_DB` then added Table `Events`. 
 
-* Open the copied project folder's `package.json` file and change its `name` property to the name of your project.
+### Connections.js
+- Declared variable and set equal to `require("mySQL")`. Added pertinent host, username, password, root, and other variables. Exported SQL variable under `connection`. 
 
-* CD to the root of the copied project folder with your terminal and run the following commands:
+### config/orm.js
+- 
 
-  ```
-  git init
-  git add .
-  git commit -m "Initial commit"
-  ```
+### model/phillymeets.js
 
-* Then copy the GitHub repo's remote SSH URL (the same URL you'd use to clone the repo).
 
-* Run the following commands in your terminal, replacing <remote-url> with your GitHub repo's remote SSH URL.
+### controller/phillymeetsController.js
 
-  ```
-  git remote add origin <remote-url>
-  git push origin master
-  ```
 
-* If completed successfully you should see all of the files uploaded to GitHub.
+### server.js
 
-* All other group members should now clone the repo.
 
-* Discuss as a group:
-
-  * How would you now add changes to this project?
+####handlebars
