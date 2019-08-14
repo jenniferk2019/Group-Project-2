@@ -9,3 +9,15 @@ $(".dropdown-menu li a").click(function() {
     .find(".btn")
     .val($(this).data("value"));
 });
+
+$("#signupModal").click(function() {
+  $(this).modal();
+});
+
+$("#loginModal").click(function() {
+  $(this).modal();
+});
+
+$("#submitBtn").click(function() {
+  $(this).modal();
+});
