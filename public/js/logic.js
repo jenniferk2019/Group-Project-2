@@ -35,3 +35,18 @@ $("#signupsubmit").click(function() {
     console.log(data);
   });
 });
+
+$("#loginsubmit").click(function() {
+  var username = $("#loginusrname").val();
+  var password = $("#loginpsw").val();
+
+  var userObj = {
+    user_name: username,
+    user_password: password
+  };
+
+  $.post("/api/login", userObj, function(data) {
+    console.log(data);
+  });
+});
+

@@ -23,18 +23,32 @@ module.exports = function(app) {
 
   // Create a new example
   app.post("/api/user", function(req, res) {
-    db.user.create({
-      user_name: req.body.user_name,
-      user_password: req.body.user_password
-    }).then(function(data) {
-      res.json(data);
-    });
+    db.user
+      .create({
+        user_name: req.body.user_name,
+        user_password: req.body.user_password
+      })
+      .then(function(data) {
+        res.json(data);
+      });
   });
 
-  // // Delete an example by id
-  // app.delete("/api/examples/:id", function(req, res) {
-  //   db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-  //     res.json(dbExample);
-  //   });
-  // });
+  app.post("/api/login", function(req, res) {
+    db.user
+      .findOne({
+        where: {
+          user_name: req.body.user_name,
+          user_password: req.body.user_password
+        }
+        })
+      .then(function(data) {
+        if(data == null) {
+          console.log("No user found with that usern\ame and password combination.");
+        } else {
+          console.log("Login was successful!");
+        }
+
+        res.end();
+      });
+  });
 };
