@@ -1,27 +1,39 @@
-var db = require("../models");
+var express = require("express");
 
-module.exports = function(app) {
-  // Load index page
+var router = express.Router();
+
+module.exports = function (app) {
+  // Get all examples
+  app.get("/post", function (req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.json(dbExamples);
+    // });
+    res.render("post");
+  });
+
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.render("index");
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+  app.get("/join", function(req, res) {
+    res.render("join");
   });
 
-  // Render 404 page for any unmatched routes
+  // // Create a new example
+  // app.post("/api/examples", function(req, res) {
+  //   db.Example.create(req.body).then(function(dbExample) {
+  //     res.json(dbExample);
+  //   });
+  // });
+
+  // // Delete an example by id
+  // app.delete("/api/examples/:id", function(req, res) {
+  //   db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.json(dbExample);
+  //   });
+  // });
   app.get("*", function(req, res) {
     res.render("404");
   });
 };
+// Render 404 page for any unmatched routes
