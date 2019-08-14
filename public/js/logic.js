@@ -47,6 +47,8 @@ $("#loginsubmit").click(function() {
 
   $.post("/api/login", userObj, function(data) {
     console.log(data);
+
+    window.location.href = "/post";
   });
 });
 
