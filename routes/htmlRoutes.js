@@ -1,4 +1,5 @@
 var express = require("express");
+var db = require("../models");
 
 var router = express.Router();
 
@@ -16,7 +17,13 @@ module.exports = function (app) {
   });
 
   app.get("/join", function(req, res) {
-    res.render("join");
+    db.hangout.findAll({}).then(function(hangoutData) {
+      console.log(hangoutData);
+      var objects = {
+        hangouts: hangoutData
+      }
+      res.render("join", objects);
+    });
   });
 
   // // Create a new example
