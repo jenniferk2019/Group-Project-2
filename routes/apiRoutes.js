@@ -21,12 +21,15 @@ module.exports = function(app) {
     res.render("join");
   });
 
-  // // Create a new example
-  // app.post("/api/examples", function(req, res) {
-  //   db.Example.create(req.body).then(function(dbExample) {
-  //     res.json(dbExample);
-  //   });
-  // });
+  // Create a new example
+  app.post("/api/user", function(req, res) {
+    db.user.create({
+      user_name: req.body.user_name,
+      user_password: req.body.user_password
+    }).then(function(data) {
+      res.json(data);
+    });
+  });
 
   // // Delete an example by id
   // app.delete("/api/examples/:id", function(req, res) {

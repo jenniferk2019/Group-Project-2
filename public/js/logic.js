@@ -21,3 +21,17 @@ $("#loginModal").click(function() {
 $("#submitBtn").click(function() {
   $(this).modal();
 });
+
+$("#signupsubmit").click(function() {
+  var username = $("#joinusrname").val();
+  var password = $("#joinpsw").val();
+
+  var userObj = {
+    user_name: username,
+    user_password: password
+  };
+
+  $.post("/api/user", userObj, function(data) {
+    console.log(data);
+  });
+});
