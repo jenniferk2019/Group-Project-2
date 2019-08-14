@@ -6,4 +6,4 @@ module.exports = function(sequelize, Sequelize) {
     user: Sequelize.STRING
   });
   return Hangout;
-}
+};
