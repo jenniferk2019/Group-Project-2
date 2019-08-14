@@ -70,67 +70,64 @@
         </nav>
       </div>
     </div>
-<!-- Form -->
-<div class="row">
-  <div class="col-lg-12">
+    <!-- Form -->
+    <div class="row">
+      <div class="col-lg-12">
 
-    <div class="card">
-      <div class="card-header">
-        fill the form below to create an account and to post your activity
-      </div>
+        <div class="card">
+          <div class="card-header">
+            fill the form below to create an account and to post your activity
+          </div>
 
-      <div class="card-body">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            category
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <li><a class="dropdown-item" href="#">food & wine</a></li>
-            <li><a class="dropdown-item" href="#">sports</a></li>
-            <li><a class="dropdown-item" href="#">entertainment</a></li>
-          </ul>
-        </div>
-        <br />
-        <form role="form">
-          <div class="form-group">
-            <label for="reserve-name">name</label>
-            <input type="text" class="form-control" id="name">
+          <div class="card-body">
+
+            <form role="form">
+              <div class="form-group">
+                <label for="category">Example select</label>
+                <select class="form-control" id="category">
+                  <option>Food & Wine</option>
+                  <option>Sports</option>
+                  <option>Entertainment</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="reserve-name">name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="reserve-phone">location</label>
+                <input type="text" class="form-control" id="location">
+              </div>
+              <div class="form-group">
+                <label for="reserve-email">date</label>
+                <input type="datetime-local" class="form-control" id="date">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">activity details</label>
+                <textarea class="form-control" id="details" rows="3"></textarea>
+              </div>
+              <br />
+              <button type="button" class="btn btn-secondary" id="addHangoutButton">submit</button>
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="submitBtn" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">wait!</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>please sign in or create an account</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="reserve-phone">location</label>
-            <input type="text" class="form-control" id="location">
-          </div>
-          <div class="form-group">
-            <label for="reserve-email">date</label>
-            <input type="text" class="form-control" id="date">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">activity details</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <br />
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#submitBtn">submit</button>
-        </form>
-        <!-- Modal -->
-        <div class="modal fade" id="submitBtn" role="dialog">
-    <div class="modal-dialog">
-<!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">wait!</h4>
         </div>
-        <div class="modal-body">
-          <p>please sign in or create an account</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
-        </div>
+        <footer class="footer">&copy;3rdWheel 2019</footer>
       </div>
-    </div>
-  </div>
-</div>
-</div>
-<footer class="footer">&copy;3rdWheel 2019</footer>
-</div>

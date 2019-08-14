@@ -70,26 +70,21 @@
         </nav>
       </div>
     </div>
-<!-- Post Form -->
-<div class="card">
-  <h5 class="card-header">featured posts</h5>
-  <div class="card-body">
-    <h5 class="card-title">activity name</h5>
-    <p class="card-text">post details.</p>
-    <a href="#" class="btn btn-secondary">tag along</a>
-  </div>
-  <br />
-  <div class="card-body">
-    <h5 class="card-title">activity name</h5>
-    <p class="card-text">post details.</p>
-    <a href="#" class="btn btn-secondary">tag along</a>
-  </div>
-  <br />
-  <div class="card-body">
-    <h5 class="card-title">activity name</h5>
-    <p class="card-text">post details.</p>
-    <a href="#" class="btn btn-secondary">tag along</a>
-  </div>
-</div>
+    <!-- Post Form -->
+    {{#each hangouts}}
+    <div class="card">
+      <div class="card-header">
+        {{date}}
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p>{{location}}</p>
+        <small>{{category}}</small>
+        <p class="card-text">{{details}}</p>
+        <a href="#" data-id={{id}} class="btn btn-primary">Tag Along</a>
+      </div>
+    </div>
+    {{/each}}
 
-  <footer class="footer">&copy;3rdWheel 2019</footer>
+
+    <footer class="footer">&copy;3rdWheel 2019</footer>

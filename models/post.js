@@ -1,9 +1,10 @@
 module.exports = function(sequelize, Sequelize) {
   var Hangout = sequelize.define("hangout", {
+    category: Sequelize.STRING,
     name: Sequelize.STRING,
     location: Sequelize.STRING,
     date: Sequelize.DATE,
-    user: Sequelize.STRING
+    details: Sequelize.STRING
   });
   return Hangout;
 };
