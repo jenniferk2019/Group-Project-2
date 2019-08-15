@@ -91,3 +91,8 @@ a {
 .card {
   font-family: 'Major Mono Display', monospace;
 }
+
+/*modals */
+.modal-body {
+  font-family: 'Major Mono Display', monospace;
+}

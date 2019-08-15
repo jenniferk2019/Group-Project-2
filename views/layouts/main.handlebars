@@ -79,11 +79,11 @@
                     <div class="modal-body">
                       <form role="form" id="signin" name="signin" method="post" action="/signin">
                         <div class="form-group">
-                          <label for="usrname"><span class="glyphicon glyphicon-user"></span> username</label>
+                          <label for="usrname"><span class="glyphicon glyphicon-user"></span>username</label>
                           <input name="username" type="text" class="form-control" id="usrname" placeholder="enter user">
                         </div>
                         <div class="form-group">
-                          <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> password</label>
+                          <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>password</label>
                           <input name="password" type="text" class="form-control" id="psw" placeholder="enter password">
                         </div>
                         <button type="submit" class="btn btn-default btn-success btn-block"><span
@@ -93,6 +93,23 @@
                   </div>
                 </div>
               </div>
+              
+<!-- welcome modal -->
+<div class="modal fade" id="welcomeModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span></h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>you're signed in!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </nav>
         </div>
