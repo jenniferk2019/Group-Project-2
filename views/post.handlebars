@@ -107,7 +107,7 @@
                 <textarea class="form-control" id="details" rows="3"></textarea>
               </div>
               <br />
-              <button type="button" class="btn btn-secondary" id="addHangoutButton">submit</button>
+              <button type="button" class="btn btn-secondary" id="addHangoutButton" data-toggle="modal" data-target="#submitBtn">submit</button>
             </form>
             <!-- Modal -->
             <div class="modal fade" id="submitBtn" role="dialog">
@@ -116,10 +116,10 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">wait!</h4>
+                    {{!-- <h4 class="modal-title">wait!</h4> --}}
                   </div>
                   <div class="modal-body">
-                    <p>please sign in or create an account</p>
+                    <p>please fill out all fields in the form before submitting</p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
