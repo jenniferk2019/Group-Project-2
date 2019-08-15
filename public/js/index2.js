@@ -1,4 +1,7 @@
 $(function () {
+
+    
+
     $(document).on("click", "#addHangoutButton", function (event) {
         event.preventDefault();
         console.log("adding event");
