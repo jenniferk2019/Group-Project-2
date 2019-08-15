@@ -10,10 +10,11 @@ module.exports = function (app, passport) {
     }
     ));
     app.post('/signin', passport.authenticate('local-signin', {
-        successRedirect: '/',
+        successRedirect: '/welcome',
         failureRedirect: '/404'
     }
     ));
+    app.get('/welcome', authController.welcome);
     app.get('/logout', authController.logout);
     function isLoggedIn(req, res, next) {
         if (req.isAuthenticated())
