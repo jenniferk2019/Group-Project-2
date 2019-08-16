@@ -38,36 +38,39 @@
             </button>
             <!-- Sign up -->
             <div class="collapse navbar-collapse" id="navbarText">
-              <div class="col-4 offset-8 text-right">
+              <div class="col-12 text-right">
                 <a data-toggle="modal" href="#signupModal" class="navbar-text mr-5" id="sign">sign up</a>
-                <div class="modal fade" id="signupModal" role="dialog">
-                  <div class="modal-dialog">
-                    <!-- Modal -->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span></h4>
-                      </div>
-                      <div class="modal-body">
-                        <form role="form" id="signup" name="signup" method="post" action="/signup">
-                          <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span>create username</label>
-                            <input name="username" type="text" class="form-control" id="usrname" placeholder="enter user">
-                          </div>
-                          <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>create password</label>
-                            <input name="password" type="text" class="form-control" id="psw" placeholder="enter password">
-                          </div>
-                          <button type="submit" class="btn btn-default btn-success btn-block"><span
-                              class="glyphicon glyphicon-off"></span>sign up</button>
-                        </form>
-                      </div>
+                <a data-toggle="modal" href="#loginModal" class="navbar-text">log in</a>
+              </div>
+
+              <div class="modal fade" id="signupModal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 style="color:green;"><span class="glyphicon glyphicon-lock"></span></h4>
+                    </div>
+                    <div class="modal-body">
+                      <form role="form" id="signup" name="signup" method="post" action="/signup">
+                        <div class="form-group">
+                          <label for="usrname"><span class="glyphicon glyphicon-user"></span>create username</label>
+                          <input name="username" type="text" class="form-control" id="usrname" placeholder="enter user">
+                        </div>
+                        <div class="form-group">
+                          <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>create password</label>
+                          <input name="password" type="text" class="form-control" id="psw" placeholder="enter password">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-success btn-block"><span
+                            class="glyphicon glyphicon-off"></span>sign up</button>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
+              {{!-- </div> --}}
               <!-- Login -->
-              <a data-toggle="modal" href="#loginModal" class="navbar-text">log in</a>
+              {{!-- <a data-toggle="modal" href="#loginModal" class="navbar-text">log in</a> --}}
               <div class="modal fade" id="loginModal" role="dialog">
                 <div class="modal-dialog">
                   <!-- Modal -->
@@ -93,7 +96,7 @@
                   </div>
                 </div>
               </div>
-              
+
 
 
             </div>
