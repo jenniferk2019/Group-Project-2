@@ -22,15 +22,7 @@ Pages:
 
 Technology:
 
--HTMLl5
--CSS3
--Bootstrap/Popper.js
--JavaScript/jQuery
--MySQL Workbench/Sequelize
--Passport
--NPM
--Node.js
--MVC (Model-View-Controller)
+HTMLl5 | CSS3 | Bootstrap/Popper.js | JavaScript/jQuery | MySQL Workbench/Sequelize | Passport | NPM | Node.js | MVC (Model-View-Controller)
 
 Click here for application https://thirdwheel.herokuapp.com/
 
