@@ -1,6 +1,8 @@
-Project 2: '3rdWheel'
+# Project 2: 
 
-Authors: Jennifer, Danit, and Josh
+3rdWheel App
+
+Team: Jennifer, Danit, and Josh
 
 Concept:
 
